@@ -1,0 +1,20 @@
+meta {
+  name: Get User by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/users/3458ed01-49ee-4fb3-b80e-e35eac11fcdd
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "fullName": "Bruno",
+    "address": "Rua",
+    "number": "200",
+    "complement": "b2 ap200"
+  }
+}

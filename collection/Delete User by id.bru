@@ -1,0 +1,20 @@
+meta {
+  name: Delete User by id
+  type: http
+  seq: 3
+}
+
+delete {
+  url: http://localhost:8080/users/647ca35f-b7fa-47d5-980f-b8446434ed32
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "fullName": "Bruno",
+    "address": "Rua",
+    "number": "200",
+    "complement": "b2 ap200"
+  }
+}
